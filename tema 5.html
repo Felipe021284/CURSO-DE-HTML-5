@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+    <title>TEMA 5</title>
+    <style>
+        body {
+    color:white;
+    font-family: arial;
+    background-image: var(--gradiente);
+   --gradiente: linear-gradient(to right, #000000, #0404B4
+    );
+} 
+.menu{
+ display: inline-block;
+  text-align:center;
+  color:white;
+  text-decoration: none;
+  /*background-color: black;*/
+  background-image: var(--gradiente);
+   --gradiente: linear-gradient(to right, #000000, #0404B4
+    );
+  Margin:10px;
+  width: 110px;
+  height:30px;
+  Padding:5px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 1px blue solid;
+  box-shadow:0px 0px 10px 1px blue;
+                  0px 0px 10px 5px blue;
+  text-shadow: -2px 1px blue;
+  }
+    .uno{
+     
+         
+    color:white;
+    border: 1px blue solid;
+    background-image: var(--gradiente);
+    font-family: var(--titulo);
+    --gradiente: linear-gradient(to right, 
+    #000000, #0404B4
+     );
+    box-shadow:0px 0px 10px 1px blue;
+               0px 0px 10px 0px blue;
+    padding:15px;
+      }
+   h1,h2{
+       text-align:center; 
+       text-shadow: -3px 2px blue;
+       
+   }
+   
+   b{
+       Color:red;
+   }
+   </style>
+    </head>
+    <body>
+      <a class="menu"
+      href="index.html">INICIO</a>
+   <div class="uno">
+   <header>
+<h1>ARTICLE,SECTION Y ASIDE</h1>
+<h2>
+    El elemento article
+</h2>
+</header>
+<p>
+ 
+ El elemento <b>article</b> es una pieza autónoma, de contenido independiente que puede ser usada y distribuida separadamente del resto de la página o sitio.  Esto podría ser un post de un foro, una revista o un artículo de revista, una entrada de blog, un comentario, un widget interactivo o gadget, o cualquier otra pieza de contenido independiente.<br /><br />
+
+El elemento <b>ARTICLE</b>   remplaza al elemento <b>DIV</b> que fue ampliamente usado en <b>HTML4</b>, junto con un id o una clase.<br /><br />
+
+<img width="100%" src="https://i.ibb.co/p19L2JM/Screenshot-20220608-170140.jpg" alt="Screenshot-20220608-170140" border="0" /><br />
+
+
+<article>
+    <h1>El título del Artículo</h1> 
+    <p>Contenidos del elemento artículo</p>
+</article>
+Cuando un elemento <b>article</b>  es anidado, el elemento interior representa un artículo relacionado al elemento exterior.  Por ejemplo, comentarios de un post en un blog pueden ser elementos <b>article</b>anidados en el <b>article</b> representando el post del blog.
+ </p>
+ 
+ <article><h2>
+     El elemento section 
+</h2></article>
+<p>
+    <b>section</b> es un contenedor lógico de la página web o artículo.  Las secciones pueden ser usadas para dividir contenido dentro de un artículo.
+Por ejemplo, una página principal podría tener una sección para introducir a la compañía, otra para ítems de noticias, y también otra para la información de contacto.<br /><br />
+
+Cada <b>section</b> debería ser identificada, típicamente incluyendo un encabezado (elemento h1-h6) como un hijo del elemento <b>section</b>.<br /><br />
+Si tiene sentido ubicar separadamente el contenido de un elemento <b>section</b>, use mejor un elemento <b>article</b>.
+
+
+<article>
+    <h1>Bienvenido</h1>
+    <section>
+        <h1>Encabezado</h1>
+        <p>contenido o imagen</p>
+    </section>
+</article>
+
+<img width="100%" src="https://i.ibb.co/gZfrsBc/Screenshot-20220608-184358.jpg" alt="Screenshot-20220608-184358" border="0" />
+
+Si tiene sentido ubicar separadamente el contenido de un elemento <b>section</b>, use mejor un elemento <b>article</b>
+</p>
+
+<article>
+    <h2>
+        El elemento aside
+    </h2>
+    
+    <p>
+        El elemento <b>aside</b>  es contenido secundario o tangencial que podría ser considerado separado pero indirectamente relacionado al contenido principal.
+Este tipo de contenido es a veces representado en barras laterales.  Cuando una etiqueta <b>aside</b> es usada dentro de una etiqueta <b>article</b>, el contenido de <b>aside</b> debería estar específicamente relacionado a ese artículo.
+EJEMPLO <br />
+<article>
+    <h1> Regalos para todos</h1>
+    <p>Este sitio web será el mejor lugar para escoger regalos </p>
+    <aside>
+        <p> Los regalos serán entregados a usted dentro de las siguientes 24 horas </p>
+    </aside>
+</article>
+
+<img width="100%" src="https://i.ibb.co/193pvfm/Screenshot-20220609-125824.jpg" alt="Screenshot-20220609-125824" border="0" /><br /><br />
+
+Cuando una etiqueta <b>aside</b> es usada fuera de una etiqueta <b>article</b> su contenido debería estar relacionado al contenido que está a su alrededor.
+
+   </p>
+</article>
+  </div>
+  </body>
+</html>
