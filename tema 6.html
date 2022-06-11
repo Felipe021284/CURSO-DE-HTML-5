@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+    <title>TEMA 6</title>
+    <style>
+        body {
+    color:white;
+    font-family: arial;
+    background-image: var(--gradiente);
+   --gradiente: linear-gradient(to right, #000000, #0404B4
+    );
+} 
+.menu{
+ display: inline-block;
+  text-align:center;
+  color:white;
+  text-decoration: none;
+  /*background-color: black;*/
+  background-image: var(--gradiente);
+   --gradiente: linear-gradient(to right, #000000, #0404B4
+    );
+  Margin:10px;
+  width: 110px;
+  height:30px;
+  Padding:5px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 1px blue solid;
+  box-shadow:0px 0px 10px 1px blue;
+                  0px 0px 10px 5px blue;
+  text-shadow: -2px 1px blue;
+  }
+    .uno{
+     
+         
+    color:white;
+    border: 1px blue solid;
+    background-image: var(--gradiente);
+    font-family: var(--titulo);
+    --gradiente: linear-gradient(to right, 
+    #000000, #0404B4
+     );
+    box-shadow:0px 0px 10px 1px blue;
+               0px 0px 10px 0px blue;
+    padding:15px;
+      }
+   h1,h2{
+       text-align:center; 
+       text-shadow: -3px 2px blue;
+       
+   }
+   
+   b{
+       Color:red;
+   }
+   img{
+       border:2px solid aqua
+       ;
+   }
+   
+   </style>
+    </head>
+    <body>
+      <a class="menu"
+      href="index.html">INICIO</a>
+   <div class="uno">
+   <header>
+<h1>
+    EL ELEMENTO AUDIO
+</h1></header>
+<p>
+ Antes de <b>HTML 5</b> , no había un estándar para reproducir archivos de audio en una página web.   El elemento <b>HTML 5 AUDIO</b> HTML5  especifica un estándar para instructar audio en una página web.
+
+Hay dos maneras diferentes de especificar la url de origen del audio. El primero usa el atributo <b>source</b>:<br />
+Ejemplo <br /><br />
+
+
+
+<audio src="http://www.sololearn.com/uploads/audio.mp3
+
+" controls>
+    Elemento de audio no soportado por su explorador
+</audio>
+
+<img width="100%" src="https://i.ibb.co/GdHqf3f/Screenshot-20220610-150231.jpg" alt="Screenshot-20220610-150231" border="0" /><br /><br />
+
+La segunda forma usa el elemento <b>source</b> dentro del elemento <b>audio</b>:
+
+<audio controls>
+    <source src="
+    http://www.sololearn.com/uploads/audio.mp3
+    
+    " type="audio/mpeg">
+    <source src="http://www.sololearn.com/uploads/audio.mp3
+    
+    " type="audio/ogg">
+
+</audio>
+    
+<img width="100%" src="https://i.ibb.co/pyK55Lh/Screenshot-20220610-153319.jpg" alt="Screenshot-20220610-153319" border="0" /><br /><br /></p>
+
+<article><h2>
+    AUDIO EN LA WEB
+</h2></article>
+
+<p>
+
+Múltiples elementos <b>source</b> pueden ser enlazados a diferentes archivos de audio. El explorador usará el primer formato reconocido.<br /><br />
+
+El elemento <b>audio</b> crea un reproductor de audio dentro del explorador.<br />
+
+El texto en medio de las etiquetas <b>audio</b> se mostrará en los exploradores que no soporten el elemento 
+</p>
+
+<article>
+    <h2>
+        Atributos de audio
+    </h2>
+</article>
+<p>
+<b>
+controls</b><br />
+Especifica qué controles de audio deberían ser desplegados (como el botón de play/pause etc.)<br />
+<b>
+autoplay</b><br />
+Cuando este atributo es definido, el audio empieza a reproducirse tan pronto está listo, sin preguntar por el permiso del visitante.<br />
+Ejemplo <br /><br />
+<img width="100%" src="https://i.ibb.co/mHyjV08/Screenshot-20220610-184609.jpg" alt="Screenshot-20220610-184609" border="0" /><br /><br />
+
+<audio controls autoplay>
+    <source src="http://www.sololearn.com/uploads/audio.mp3" type="audio/mpeg">
+    Elemento de audio no soportado por su explorador
+</audio><br />
+
+ <b>  loop </b> <br />
+Este atributo es usado para que el audio se vuelva a reproducir cada vez que finaliza.<br />
+Ejemplo <br /><br />
+<img width="100%" src="https://i.ibb.co/kD9sJtr/Screenshot-20220610-185316.jpg" alt="Screenshot-20220610-185316" border="0" /><br /><br />
+
+<audio controls autoplay loop>
+    <source src="http://www.sololearn.com/uploads/audio.mp3" type="audio/mpeg">
+    Elemento de audio no soportado por su explorador
+</audio><br /><br />
+
+Actualmente, hay tres formatos de archivo soportados para el elemento audio:<b> MP3, WAV y OGG.</b>
+
+</p>
+  </div>
+  </body>
+</html>
