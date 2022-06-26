@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+    <title>TEMA 12</title>
+    <style>
+        body {
+    color:white;
+    font-family: arial;
+    background-image: var(--gradiente);
+   --gradiente: linear-gradient(to right, #000000, #0404B4
+    );
+} 
+.menu{
+ display: inline-block;
+  text-align:center;
+  color:white;
+  text-decoration: none;
+  /*background-color: black;*/
+  background-image: var(--gradiente);
+   --gradiente: linear-gradient(to right, #000000, #0404B4
+    );
+  Margin:10px;
+  width: 110px;
+  height:30px;
+  Padding:5px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 1px blue solid;
+  box-shadow:0px 0px 10px 1px blue;
+                  0px 0px 10px 5px blue;
+  text-shadow: -2px 1px blue;
+  }
+    .uno{
+     
+         
+    color:white;
+    border: 1px blue solid;
+    background-image: var(--gradiente);
+    font-family: var(--titulo);
+    --gradiente: linear-gradient(to right, 
+    #000000, #0404B4
+     );
+    box-shadow:0px 0px 10px 1px blue;
+               0px 0px 10px 0px blue;
+    padding:15px;
+      }
+   h1,h2{
+       text-align:center; 
+       text-shadow: -3px 2px blue;
+       
+   }
+   
+   b{
+       Color:red;
+   }
+   img{
+       border:2px solid aqua
+       ;
+   }
+   
+   </style>
+    </head>
+    <body>
+      <a class="menu"
+      href="index.html">INICIO</a>
+   <div class="uno">
+   <article>
+<h1>SVG</h1>
+<h2>
+    Dibujando Formas
+</h2>
+</article>
+<p>
+ 
+<b>SVG </b>
+significa Gráficos Vectoriales Escalables (Scalable Vector Graphics), y es usado para dibujar formas con estilo de marcado <b>
+HTML.</b><br /><br />
+
+<b>SVG</b>
+ ofrece varios métodos para dibujar trazos,rectángulos, círculos, texto e imágenes.
+<br /><br />
+ 
+<b> SVG </b>
+no está basado en píxeles, por lo que puede ser magnificado infinitamente sin pérdida de calidad.
+</p>
+<article>
+
+<h2>
+    Insertando Imágenes SVG
+</h2>
+<p>
+
+Una imagen <b>SVG </b>
+puede ser agregada al código <b>  HTML </b>
+con solo una etiqueta básica de imagen que incluye un atributo source apuntando a la imagen:<br /><br />
+
+<b>
+SVG </b> define imágenes basadas en vectores en formato <b> XML.</b> <br /><br />
+
+
+<img width="100%" src="https://i.ibb.co/Sngffxx/Screenshot-20220622-173134.jpg" alt="Screenshot-20220622-173134" border="0">
+</p>
+
+<article>
+    <h2>
+        Dibujando un círculo
+    </h2>
+    
+    <p>
+    Para dibujar formas con <b>
+    SVG, </b>
+    usted primero necesitamos crear una etiqueta de elemento SVG con dos atributos: ancho y alto.<br /><br />
+    
+    <img width="100%" src="https://i.ibb.co/2dv7bFD/Screenshot-20220623-124345.jpg" alt="Screenshot-20220623-124345" border="0">
+    
+Para crear un círculo, agregamos una etiqueta <b> circle:</b>   <br />
+Ejemplo <br /><br />
+
+        <svg width="300" >
+   <circle cx="80" cy="80" r="50" fill="aqua" />
+</svg>
+
+
+<img width="100%" src="https://i.ibb.co/2sSJXQ3/Screenshot-20220623-141925.jpg" alt="Screenshot-20220623-141925" border="0"><br /><br />
+
+<b>- cx </b>
+mueve el centro del círculo más a la derecha de la pantalla <br />
+
+<b>- cy </b>
+mueve el centro del círculo más abajo respecto a la parte superior de la pantalla <br />
+<b>- r </b>
+define el radio <br />
+<b> - fill </b> determina el color de nuestro círculo <br />
+<b>- stroke </b>agrega un marco al círculo
+<br /><br />
+   
+   Todos los elementos y atributos de los archivos <b>SVG </b>  pueden ser animados.
+        </p>
+</article>
+<article>
+    <h2>
+        Otros Elementos de formas
+    </h2>
+    <p>
+       <b>rect </b> define un rectángulo:<br />
+       Ejemplo <br />
+           
+ <svg  >
+   <rect width="300" height="100" 
+     x="20" y="20" fill="aqua" />
+</svg>
+
+
+<img width="100%" src="https://i.ibb.co/9Z0sNPF/Screenshot-20220624-185357.jpg" alt="Screenshot-20220624-185357" border="0"><br /><br />
+
+
+El siguiente código dibujará un rectángulo con un relleno azul.<br /><br />
+
+Los atributos <b>width y height </b> del elemento rect definen la altura y la anchura del rectángulo.<br /><br /><br />
+
+<b>line </b> define un segmento de línea:<br />
+Ejemplo <br /><br />
+
+<svg >
+    <line x1="10" y1="10" x2="200" y2="100" 
+        style="stroke:aqua; stroke-linecap:round; 
+        stroke-width:20"  />
+</svg>
+
+<img width="100%" src="https://i.ibb.co/1J6GBRy/Screenshot-20220625-163250.jpg" alt="Screenshot-20220625-163250" border="0"><br /><br />
+<b>
+(x1, y1)</b>
+ define las coordenadas de inicio <br />
+ <b>
+ (x2, y2)</b>
+  define las coordenadas finales.<br /><br />
+ <b>
+  polyline </b> define formas construídas de múltiples definiciones de líneas:
+  
+  <svg >
+    <polyline style="stroke-linejoin:miter; stroke:aqua; 
+        stroke-width:10; fill: none;"
+        points="100 100, 150 150, 200 100" />
+</svg><br /><br />
+
+<img width="100%" src="https://i.ibb.co/M125bn4/Screenshot-20220625-181957.jpg" alt="Screenshot-20220625-181957" border="0"><br /><br />
+
+
+Los puntos son las coordenadas de las polilíneas.<br />
+El código de abajo dibujará una marca de verificación azul:
+
+       
+    </p>
+</article>
+
+<article>
+    <h2>ellipse y polygon
+        
+    </h2>
+    
+    <p>
+ <b>  Elipse </b> <br />>
+El elemento <b>
+ ellipse</b> es similar al elemento <b> circle </b>, con una excepción:<br /> 
+Puedes modificar independientemente los ejes horizontales y verticales de su radio, usando los atributos <b> rx y ry.</b><br /><br />
+
+<svg>
+   <ellipse cx="150" cy="80" rx="150" ry="70" style="fill:aqua" /><br /><br />
+   
+</svg>
+<img width="100%" src="https://i.ibb.co/x5dtgpC/Screenshot-20220626-113952.jpg" alt="Screenshot-20220626-113952" border="0"><br /><br />
+
+<b>
+Polígono </b><br />
+El elemento <b>polygon </b>es usado para crear un gráfico con al menos tres lados.<br /> El elemento polígono es único porque cierra la forma automáticamente por usted.<br /><br />
+Polygon viene del griego. "Poly" significa "muchos" y "gon" significa "ángulo".<br /><br />
+
+<svg >
+<polygon points="100 100,1 1,200 0" 
+      style="fill:aqua; stroke:white;" />
+</svg>
+<img width="100%" src="https://i.ibb.co/pZ05Ffq/Screenshot-20220626-120935.jpg" alt="Screenshot-20220626-120935" border="0">
+
+
+        
+    </p>
+</article>
+  </div>
+  </body>
+</html>
