@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+    <title>TEMA 13</title>
+    <style>
+        body {
+    color:white;
+    font-family: arial;
+    background-image: var(--gradiente);
+   --gradiente: linear-gradient(to right, #000000, #0404B4
+    );
+} 
+.menu{
+ display: inline-block;
+  text-align:center;
+  color:white;
+  text-decoration: none;
+  /*background-color: black;*/
+  background-image: var(--gradiente);
+   --gradiente: linear-gradient(to right, #000000, #0404B4
+    );
+  Margin:10px;
+  width: 110px;
+  height:30px;
+  Padding:5px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 1px blue solid;
+  box-shadow:0px 0px 10px 1px blue;
+                  0px 0px 10px 5px blue;
+  text-shadow: -2px 1px blue;
+  }
+    .uno{
+     
+         
+    color:white;
+    border: 1px blue solid;
+    background-image: var(--gradiente);
+    font-family: var(--titulo);
+    --gradiente: linear-gradient(to right, 
+    #000000, #0404B4
+     );
+    box-shadow:0px 0px 10px 1px blue;
+               0px 0px 10px 0px blue;
+    padding:15px;
+      }
+   h1,h2{
+       text-align:center; 
+       text-shadow: -3px 2px blue;
+       
+   }
+   
+   b{
+       Color:red;
+   }
+   img{
+       border:2px solid aqua
+       ;
+   }
+   
+   </style>
+    </head>
+    <body>
+      <a class="menu"
+      href="index.html">INICIO</a>
+   <div class="uno">
+   <article>
+<h1>Animaciones de Forma
+    
+</h1>
+
+</article>
+<p>
+Las animaciones <b>
+SVG </b>
+pueden ser creadas usando el elemento <b>animate </b>. <br />
+
+El siguiente ejemplo crea un rectángulo que cambiará su posición en 3 segundos y luego repetirá la animación dos veces:<br /><br />
+<svg >
+    <rect width="50" height="50" fill="aqua">
+        <animate attributeName="x" from="0" to="250"
+      dur=".5s" fill="freeze"repeatCount="5"/> 
+    </rect>
+</svg>
+
+
+<img width="100%" src="https://i.ibb.co/hC8b4ZT/Screenshot-20220627-114428.jpg" alt="Screenshot-20220627-114428" border="0"><br /><br />
+
+<b>
+attributeName:</b><br />
+Especifica cuál atributo será afectado por la animación <br />
+<b>
+from: </b><br />
+Especifica el valor de comienzo del atributo <br />
+<b>
+to:</b><br />
+Especifica el valor final del atributo
+dur: Especifica cuánto tiempo corre la animación (duración)<br />
+<b>
+fill: </b><br />
+Especifica si el valor del atributo debe o no devolverse a su valor inicial cando la animación finaliza (Valores: "remove" resetea el valor; "freeze" conserva el “to value”)<br />
+<b>
+repeatCount:</b><br />
+ Especifica el conteo de repetición de la animación <br /><br />
+
+En el ejemplo anterior, el rectángulo cambia su atributo x de 0 a 300 en 3 segundos. <br /><br />
+
+Para repetir la animación indefinidamente, utiliza el valor <b> "undefined" </b> para el atributo repeatCount.
+ </p>
+ 
+ <article>
+     <h2>
+         Trazos
+     </h2>
+     
+     <p>
+         
+         El elemento <b>path </b>
+          es usado para definir un Trazo.<br />
+
+Los siguientes comandos están disponibles para datos de Trazo:<br />
+<b>
+M:</b>
+ mover hacia <br />
+ <b>
+L:</b>
+ línea hacia <br />
+ <b>
+H:
+</b> línea horizontal hacia <br>
+<b>
+V:</b>
+ línea vertical hacia <br />
+ <b>
+C: </b>
+curva hacia <br />
+<b>
+S: </b>
+curva suave hacia <br />
+<b>
+Q:</b>
+ curva Bézier cuadrática <br />
+ <b>
+T: </b>
+curva Bézier cuadrática suave <br />
+<b>
+A:</b>
+ Arco elíptico <br />
+ <b>
+
+Z: </b>
+closepath, cerrar trazado <br /><br>
+
+
+         <svg>
+<path d="M 0 0 L100 100 L100 0 Z" style="stroke:aqua;  fill:none;" />
+</svg><br /><br />
+<img width="100%" src="https://i.ibb.co/VxkZSJg/Screenshot-20220628-173942.jpg" alt="Screenshot-20220628-173942" border="0"><br /><br />
+
+<b>M</b> coloca nuestro "lápiz virtual" abajo en la posición 0,0.<br />  Luego se mueve 100px hacia abajo y a la derecha, luego se mueve hacia arriba a la posición 100,0.<br /> El comando <b>Z</b> cierra la forma, lo que resulta en una hipotenusa:<br /><br />
+
+<b>
+    Nota
+</b><br />
+Todos los comandos presentados arriba pueden también ser expresados con letras minúsculas. <br /> Cuando se usan letras mayúsculas, se indica una posición absoluta; minúsculas indican una posición relativa.
+         
+         
+     </p>
+ </article>
+  </div>
+  </body>
+</html>
