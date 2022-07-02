@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+    <title>TEMA 14</title>
+    <style>
+        body {
+    color:white;
+    font-family: arial;
+    background-image: var(--gradiente);
+   --gradiente: linear-gradient(to right, #000000, #0404B4
+    );
+} 
+.menu{
+ display: inline-block;
+  text-align:center;
+  color:white;
+  text-decoration: none;
+  /*background-color: black;*/
+  background-image: var(--gradiente);
+   --gradiente: linear-gradient(to right, #000000, #0404B4
+    );
+  Margin:10px;
+  width: 110px;
+  height:30px;
+  Padding:5px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 1px blue solid;
+  box-shadow:0px 0px 10px 1px blue;
+                  0px 0px 10px 5px blue;
+  text-shadow: -2px 1px blue;
+  }
+    .uno{
+     
+         
+    color:white;
+    border: 1px blue solid;
+    background-image: var(--gradiente);
+    font-family: var(--titulo);
+    --gradiente: linear-gradient(to right, 
+    #000000, #0404B4
+     );
+    box-shadow:0px 0px 10px 1px blue;
+               0px 0px 10px 0px blue;
+    padding:15px;
+      }
+   h1,h2{
+       text-align:center; 
+       text-shadow: -3px 2px blue;
+       
+   }
+   
+   b{
+       Color:red;
+   }
+   img{
+       border:2px solid aqua
+       ;
+   }
+   
+   </style>
+    </head>
+    <body>
+      <a class="menu"
+      href="index.html">INICIO</a>
+   <div class="uno">
+   <article>
+<h1>El elemento canvas
+    
+</h1>
+<h2>
+    Barra de progreso
+</h2>
+</article>
+<p>
+El <b>canvas HTML </b> es usado para dibujar gráficos que incluyen desde líneas simples a objetos gráficos complejos.<br /><br />
+
+
+ <img width="100%" src="https://i.ibb.co/wWdkXw9/Screenshot-20220630-104640.jpg" alt="Screenshot-20220630-104640" border="0">
+
+El elemento <b> canvas </b> es solo un contenedor para gráficos. Se debe usar un script para dibujar realmente los gráficos <br />
+<b> (usualmente JavaScript).</b><br /><br />
+
+El elemento <b>canvas </b> debe tener un <b> atributo id </b> para que pueda ser referido por <b> JavaScript: </b><br /><br />
+
+<img width="100%" src="https://i.ibb.co/0VmnSrk/Screenshot-20220630-174956.jpg" alt="Screenshot-20220630-174956" border="0"><br /><br />
+
+<b>
+getContext()</b>
+ retorna un contexto de dibujo sobre el Canvas.<br /><br /><br />
+ 
+ <b>NOTA</b><br />
+ Conocimiento básico de JavaScript es requerido para entender y usar el Canvas.
+ </p>
+ 
+ <article>
+     <h2>Coordenadas del Canvas
+         
+     </h2>
+     
+     <p><b>
+         El Canvas HTML </b> es una grilla bi-dimensional. <br />
+La esquina superior izquierda del Canvas tiene las coordenadas (0,0).<br /><br />
+<b>
+
+La coordenada X <br />
+</b> aumenta hacia la derecha.<br />
+<b>
+La coordenada Y </b> <br /> aumenta hacia la parte inferior del Canvas.<br /><br />
+
+<img width="100%" src="https://i.ibb.co/N1F7z5p/Screenshot-20220701-110506.jpg" alt="Screenshot-20220701-110506" border="0"><br /><br />
+
+El elemento <b >canvas </b> es solo un contenedor para gráficos.
+
+
+     </p>
+ </article>
+ 
+ <article>
+     <h2>Dibujando Formas
+         
+     </h2>
+     
+     <p>
+     El método <b>
+     fillRect(x, y, w, h)</b><br /> dibuja un rectángulo "relleno" <br /> en el cual <b> w</b> indica el ancho <br /> y <b>h</b>  indica altura.<br />  El color de relleno por defecto es negro.<br /><br />
+
+Ejemplo de un  rectángulo de 100*100 pixeles es dibujado en el Canvas en la posición (190, 20):<br /><br />
+
+
+
+      <canvas id="canvas1">
+        </canvas> 
+    <script>
+        var c=document.getElementById("canvas1");
+        var ctx=c.getContext("2d");
+        ctx.fillRect(190,20,100,100);
+    </script><br />
+    
+    <img width="100%" src="https://i.ibb.co/P9mfNW4/Screenshot-20220701-151249.jpg" alt="Screenshot-20220701-151249" border="0"><br /><br />
+    
+    La propiedad <b>  fillStyle </b> <br />
+     es usada para establecer un color, gradiente, o patrón para llenar el dibujo <br />
+     Ejemplo <br />
+    <canvas id="canvas2">
+        </canvas> 
+        <script>
+            var canvas=document.getElementById("canvas2");
+            var ctx=canvas.getContext("2d");
+            
+            ctx.fillStyle ="rgba(0,255,255, 1)";
+            ctx.fillRect (36, 10, 22, 22);
+        </script>
+        
+<img width="100%" src="https://i.ibb.co/1f5bJ8T/Screenshot-20220701-194545.jpg" alt="Screenshot-20220701-194545" border="0"><br /><br />
+
+
+El <b>
+ Canvas </b><br />
+ soporta varios métodos varios para dibujar:<br /><br />
+
+Dibujar una línea <br />
+<b>
+moveTo(x,y):</b> <br />define el punto de inicio de la línea.<br />
+
+<b>
+lineTo(x,y):</b><br />
+ Define el punto final de la línea.<br /><br />
+
+Dibujar un círculo<br />
+<b>
+beginPath():</b><br />
+Inicia el dibujo.<br />
+<b>
+arc(x,y,r,start,stop):</b><br />
+Establece el parámetro del círculo.<br />
+<b>
+stroke():</b>
+ Finaliza el dibujo.<br /><br />
+
+
+Gradientes <br />
+<b>
+createLinearGradient(x,y,x1,y1): </b><br> Crea un gradiente lineal.<br />
+<b>
+createRadialGradient(x,y,r,x1,y1,r1):</b><br />
+ Crea un gradiente radial/circular.<br /><br />
+ 
+Dibujando texto sobre el Canvas <br />
+<b>
+Font: </b><br />
+Define las propiedades de la fuente para el texto.<br />
+<b>
+fillText(text,x,y):</b><br />
+Dibuja texto "relleno" sobre el Canvas.<br />
+<b>
+strokeText(text,x,y):</b><br />
+ Dibuja texto sobre el Canvas (sin relleno).<br /><br />
+ 
+<b>NOTA</b><br />
+
+Hay muchos otros más enfocados a ayudar a dibujar formas e imágenes sobre el Canvas.
+
+
+ </p>
+ </article>
+  </div>
+  </body>
+</html>
