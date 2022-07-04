@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+    <title>TEMA 17</title>
+    <style>
+        body {
+    color:white;
+    font-family: arial;
+    background-image: var(--gradiente);
+   --gradiente: linear-gradient(to right, #000000, #0404B4
+    );
+} 
+.menu{
+ display: inline-block;
+  text-align:center;
+  color:white;
+  text-decoration: none;
+  /*background-color: black;*/
+  background-image: var(--gradiente);
+   --gradiente: linear-gradient(to right, #000000, #0404B4
+    );
+  Margin:10px;
+  width: 110px;
+  height:30px;
+  Padding:5px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 1px blue solid;
+  box-shadow:0px 0px 10px 1px blue;
+                  0px 0px 10px 5px blue;
+  text-shadow: -2px 1px blue;
+  }
+    .uno{
+     
+         
+    color:white;
+    border: 1px blue solid;
+    background-image: var(--gradiente);
+    font-family: var(--titulo);
+    --gradiente: linear-gradient(to right, 
+    #000000, #0404B4
+     );
+    box-shadow:0px 0px 10px 1px blue;
+               0px 0px 10px 0px blue;
+    padding:15px;
+      }
+   h1,h2{
+       text-align:center; 
+       text-shadow: -3px 2px blue;
+       
+   }
+   
+   b{
+       Color:red;
+   }
+   img{
+       border:2px solid aqua
+       ;
+   }
+   
+   </style>
+    </head>
+    <body>
+      <a class="menu"
+      href="index.html">INICIO</a>
+   <div class="uno">
+   <article>
+<h1>
+    Formularios HTML5 
+</h1>
+
+</article>
+<p>
+ 
+ <b>
+HTML5 </b>
+trae muchas características y mejoras a la creación de formularios web.  Hay nuevos atributos y tipos de entradas que fueron introducidos para ayudar a crear mejores experiencias para los usuarios web.<br /><br />
+
+La creación de formularios es hecha en 
+<b>
+HTML5 </b>
+de la misma manera que se hacía en <b>
+HTML4:</b><br /><br />
+
+<b>
+    Ejemplo
+</b>
+
+
+<form>
+    <label>Su nombre:</label>
+    <input id="user" name="username" type="text" />
+</form><br /><br />
+
+<img width="100%" src="https://i.ibb.co/37SPqDz/Screenshot-20220704-010803.jpg" alt="Screenshot-20220704-010803" border="0"><br /><br />
+
+<b>
+NOTA
+</b><br />
+Utiliza el atributo novalidate para evitar la validación de formularios en envíos.
+    
+    </p>
+    <article>
+        <h2>
+            Nuevos Atributos
+        </h2>
+        <p>
+        <b>
+        HTML5</b>
+        ha introducido un nuevo atributo llamado <b>
+         placeholder.</b><br />
+          En los elementos <b> input y textarea </b> este atributo provee una indicación al usuario de qué información puede ser ingresada en el campo.<br /><br />
+
+<b>
+    Ejemplo
+</b>
+          
+<form>
+    <label for="email">Your e-mail address: </label>
+    <input type="text" name="email" placeholder="email@example.com" />
+</form><br /><br />
+
+<img width="100%" src="https://i.ibb.co/XDSffw4/Screenshot-20220704-012511.jpg" alt="Screenshot-20220704-012511" border="0"></a><br /><br />
+
+El atributo <b>
+autofocus </b>
+ hace que el cursor se posicione en el campo de entrada deseado cuando el formulario se carga:<br /><br />
+ <b>
+     Ejemplo
+ </b>
+ 
+ <form>
+    <label for="email">Your e-mail address: </label> 
+    <input type="text" name="email" autofocus />
+</form> <br /><br />
+
+ <img width="100%" src="https://i.ibb.co/b35WF26/Screenshot-20220704-013135.jpg" alt="Screenshot-20220704-013135" border="0"><br /><br />
+ <b>
+     NOTA
+ </b><br />
+ El ATRIBUTO <b>
+ required </B>
+ dice al navegador que el campo de entrada es obligatorio.
+            
+        </p>
+    </article>
+    
+    <article>
+        <h2>
+            Formularios con campos requeridos
+        </h2>
+        <p>
+        El atributo <b> "required" </b>
+        es usado para crear los elementos de entrada necesarios:<br />
+        El formulario no será enviado sin llenar los campos requeridos.<br />
+        <b>
+            Ejemplo
+        </b>
+            <form autocomplete="off">
+    <label for="e-mail">Su e-mail: </label> 
+    <input name="Email" type="text" required />
+    <input type="submit" value="Submit" />
+</form><br /><br />
+
+<img width="100%" src="https://i.ibb.co/QrxT43v/Screenshot-20220704-014829.jpg" alt="Screenshot-20220704-014829" border="0"><br />
+<img width="100%" src="https://i.ibb.co/BqrVprW/Screenshot-20220704-015047.jpg" alt="Screenshot-20220704-015047" border="0"><br /><br />
+<b>
+    NOTA
+</b><br />
+El atributo <b>autocomplete </b> especifica si un formulario o campo de entrada debería tener autocompletar activado o no.
+Cuando autocompletar está activado, el explorador automáticamente completa valores basado en valores que el usuario ha ingresado antes.<br /><br />
+
+<b>
+HTML5 agregó varios tipos de entrada nuevos:</b><br />
+- color <br />
+- date <br />
+- datetime <br />
+- datetime-local <br />
+- email <br />
+- month <br />
+- number <br />
+- range <br />
+- search <br />
+- tel <br />
+- time <br />
+- url <br />
+- week <br /><br />
+<b>
+
+Nuevos atributos de entrada en HTML5: </b><br />
+- autofocus <br />
+- form <br />
+- formaction <br />
+- formenctype <br />
+- formmethod <br />
+- formnovalidate <br />
+- formtarget <br />
+- height and width <br />
+- list <br />
+- min and max <br />
+- multiple <br />
+- pattern (regexp) <br />
+- placeholder <br />
+- required <br />
+- step <br /><br />
+<b>
+    NOTA
+</b><br />
+Los tipos de entrada que no son soportados por exploradores web desactualizados, se comportarán como una entrada de texto.
+
+        </p>
+    </article>
+  </div>
+  </body>
+</html>
