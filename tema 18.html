@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+    <title>TEMA 18</title>
+    <style>
+        body {
+    color:white;
+    font-family: arial;
+    background-image: var(--gradiente);
+   --gradiente: linear-gradient(to right, #000000, #0404B4
+    );
+} 
+.menu{
+ display: inline-block;
+  text-align:center;
+  color:white;
+  text-decoration: none;
+  /*background-color: black;*/
+  background-image: var(--gradiente);
+   --gradiente: linear-gradient(to right, #000000, #0404B4
+    );
+  Margin:10px;
+  width: 110px;
+  height:30px;
+  Padding:5px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 1px blue solid;
+  box-shadow:0px 0px 10px 1px blue;
+                  0px 0px 10px 5px blue;
+  text-shadow: -2px 1px blue;
+  }
+    .uno{
+     
+         
+    color:white;
+    border: 1px blue solid;
+    background-image: var(--gradiente);
+    font-family: var(--titulo);
+    --gradiente: linear-gradient(to right, 
+    #000000, #0404B4
+     );
+    box-shadow:0px 0px 10px 1px blue;
+               0px 0px 10px 0px blue;
+    padding:15px;
+      }
+   h1,h2{
+       text-align:center; 
+       text-shadow: -3px 2px blue;
+       
+   }
+   
+   b{
+       Color:red;
+   }
+   img{
+       border:2px solid aqua
+       ;
+   }
+   
+   </style>
+    </head>
+    <body>
+      <a class="menu"
+      href="index.html">INICIO</a>
+   <div class="uno">
+   <article>
+<h1>
+    Creando un cuadro de búsqueda
+</h1>
+
+</article>
+<p>
+ El Nuevo tipo de  entrada <b> search </b> puede ser usado para crear un cuadro de búsqueda: <br /><br />
+ <b>
+     NOTA
+ </b><br />
+ Acuérdate de asignar un nombre a tu entrada, de lo contrario no se enviará nada.<br /><br />
+ 
+ <input id="mysearch" name="searchitem" type="search" /><br /><br />
+
+
+<img width="100%" src="https://i.ibb.co/tBQZ72f/Screenshot-20220705-105207.jpg" alt="Screenshot-20220705-105207" border="0">
+
+    </p>
+    
+    <article><h2>
+    Opciones de búsqueda</h2>
+    <p>
+        La etiqueta <b> datalist </b> puede ser usada para definir una lista de opciones pre-definidas para el cuadro de búsqueda: <br /><br />
+        
+      <b> option </b><br /> define las opciones en una lista desplegable para que el usuario pueda seleccionar.<br><br />
+      
+      El <b>
+      ID </b>
+      del elemento datalist debe coincidir con el atributo list del cuadro de entrada.
+        
+        
+        
+    
+    </p>
+    
+    <input id="car" type="text" list="colores" />
+<datalist id="colores">
+    <option value="Rojo">
+    <option value="Verde">
+    <option value="Amarillo">
+</datalist><br /><br />
+
+<img width="100%" src="https://i.ibb.co/0cWBCQ6/Screenshot-20220705-122022.jpg" alt="Screenshot-20220705-122022" border="0"></a>
+        
+    </article>
+    
+    <article>
+        <h2>
+            Creando más campos
+        </h2>
+        <p>
+            Otros tipos de entrada nuevos incluyen <b> email, url, y tel:</b><br /><br />
+            
+            Estos campos son especialmente útiles cuando se abre una página en un dispositivo móvil moderno, que reconoce los tipos de entrada y abre el correspondiente teclado que coincide con el tipo de campo.
+   <br><br />         
+        Estos nuevos tipos hacen más fácil estructurar y validar los formularios <b>
+        HTML.</b>
+<br><br />
+<b>
+    Ejemplo
+</b><br />
+        <input id="email" name="email" type="email" placeholder="example@example.com" />
+<br />
+<input id="url" name="url" type="url" placeholder="example.com" />
+<br />
+<input id="tel" name="tel" type="tel" placeholder="555.555.1211" /><br /><br />
+
+
+<img width="100%" src="https://i.ibb.co/j3rFC1G/Screenshot-20220705-141212.jpg" alt="Screenshot-20220705-141212" border="0">
+
+
+        </p>
+    </article>
+  </div>
+  </body>
+</html>
